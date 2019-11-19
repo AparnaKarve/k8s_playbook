@@ -1,0 +1,8 @@
+---
+- name: use galaxy k8s role
+  hosts: all 
+  user: ansible
+  become: true
+
+  roles:
+    - role: geerlingguy.kubernetes
